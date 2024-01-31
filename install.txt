@@ -1,0 +1,5 @@
+dependencias para o projeto:
+pip install numpy
+pip install matplotlib
+pip install tensorflow
+pip install scipy
