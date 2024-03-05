@@ -3,6 +3,8 @@ from azure.storage.blob import BlobServiceClient
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
+import pandas as pd
+
 
 # Carregar modelo treinado
 loaded_model = load_model('../soil_classifier_model.h5')
@@ -55,13 +57,21 @@ if selected_blob:
     if black_probability > red_probability:
         predicted_class = "Preto"
         higher_probability = black_probability
+        plant_suggestion = "Plantas como milho, feijão e soja são bem adaptadas ao solo preto."
     else:
         predicted_class = "Vermelho"
         higher_probability = red_probability
+        plant_suggestion = "Plantas como tomate, morango e pimentão são bem adaptadas ao solo vermelho."
 
-    # Exibir resultados na interface
-    st.image(local_file_path, caption="Imagem de Solo", use_column_width=True)
-    st.write(f"Classe do solo: {predicted_class}")
-    st.write(f"Probabilidade de ser solo preto: {black_probability * 100:.2f}%")
-    st.write(f"Probabilidade de ser solo vermelho: {red_probability * 100:.2f}%")
-    
+   
+# Exibir resultados na interface
+st.image(local_file_path, caption="Imagem de Solo", width=300)
+
+# Criar e exibir uma tabela com as informações
+results_table = pd.DataFrame({
+    "Classe do solo": [predicted_class],
+    "Probabilidade de ser solo preto": [f"{black_probability * 100:.2f}%"],
+    "Probabilidade de ser solo vermelho": [f"{red_probability * 100:.2f}%"]
+})
+st.table(results_table)
+st.write(f"\nRecomendação de plantio: {plant_suggestion}")
