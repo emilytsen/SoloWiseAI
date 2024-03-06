@@ -75,3 +75,40 @@ results_table = pd.DataFrame({
 })
 st.table(results_table)
 st.write(f"\nRecomendação de plantio: {plant_suggestion}")
+
+
+if predicted_class == "Vermelho":
+    st.title("Características do Solo Vermelho")
+
+    # Lista de características do solo vermelho
+    with st.expander("Cor"):
+        st.write("""
+            Como o nome sugere, o solo vermelho tem uma coloração avermelhada devido à presença de óxidos de ferro, especialmente o óxido de ferro (III) ou ferrugem.
+        """)
+    with st.expander("Textura"):
+        st.write("""
+            A textura do solo vermelho pode variar, mas muitas vezes é composta por partículas finas e bem desagregadas. Essa textura pode afetar a capacidade de retenção de água e nutrientes do solo.
+        """)
+    with st.expander("Composição mineral"):
+        st.write("""
+            O solo vermelho geralmente contém minerais de argila, areia e silte. A proporção desses minerais pode variar dependendo da região geográfica.
+        """)
+    with st.expander("Fertilidade"):
+        st.write("""
+            O solo vermelho pode ser naturalmente fértil devido à presença de minerais de ferro e outros nutrientes. No entanto, a fertilidade do solo pode variar dependendo de fatores como a quantidade de matéria orgânica e a disponibilidade de água.
+        """)
+    with st.expander("Oxidação"):
+        st.write("""
+            O solo vermelho é frequentemente associado à oxidação do ferro, que ocorre quando minerais de ferro são expostos ao oxigênio e à água. Isso pode resultar na formação de manchas ou veios vermelhos no solo.
+        """)
+    with st.expander("Resistência à erosão"):
+        st.write("""
+            Devido à sua textura fina e agregação, o solo vermelho pode ser mais suscetível à erosão, especialmente em áreas com chuvas intensas ou ventos fortes.
+        """)
+    with st.expander("Distribuição geográfica"):
+        st.write("""
+            O solo vermelho pode ser encontrado em várias partes do mundo, incluindo regiões tropicais e subtropicais. Sua distribuição geográfica pode ser influenciada por fatores climáticos, geológicos e pedogenéticos.
+        """)
+   
+
+
