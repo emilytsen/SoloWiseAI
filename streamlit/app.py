@@ -110,5 +110,38 @@ if predicted_class == "Vermelho":
             O solo vermelho pode ser encontrado em várias partes do mundo, incluindo regiões tropicais e subtropicais. Sua distribuição geográfica pode ser influenciada por fatores climáticos, geológicos e pedogenéticos.
         """)
    
+if predicted_class == "Preto":
+    st.title("Características do Solo Preto")
+
+    # Lista de características do solo vermelho
+    with st.expander("Cor"):
+        st.write("""
+            O solo preto tem uma cor escura devido ao alto teor de matéria orgânica em decomposição. Essa matéria orgânica ajuda a reter umidade e nutrientes, tornando-o especialmente fértil.
+        """)
+    with st.expander("Textura"):
+        st.write("""
+            em muitas regiões onde o solo orgânico preto é encontrado em abundância, ele tende a ter uma textura argilosa ou silto-argilosa. Isso ocorre porque a decomposição de matéria orgânica ao longo do tempo pode adicionar uma quantidade significativa de partículas finas ao solo, resultando em uma textura mais argilosa.
+        """)
+    with st.expander("Composição mineral"):
+        st.write("""
+            O solo preto é composto principalmente por minerais argilosos, como a montmorilonita e a caulinita, que são responsáveis pela sua textura densa e alta capacidade de retenção de água e nutrientes.
+        """)
+    with st.expander("Fertilidade"):
+        st.write("""
+            Devido ao alto teor de matéria orgânica, o solo preto é altamente fértil e adequado para o cultivo de uma variedade de plantas. Ele fornece nutrientes essenciais às plantas e ajuda a melhorar a estrutura do solo.
+        """)
+    with st.expander("Oxidação"):
+        st.write("""
+            A oxidação é um processo que pode afetar a cor e a estrutura do solo. No caso do solo preto, a matéria orgânica presente nele pode passar por processos de oxidação ao longo do tempo, resultando em mudanças na sua cor e na disponibilidade de nutrientes.
+        """)
+    with st.expander("Resistência à erosão"):
+        st.write("""
+            O solo preto, devido à sua alta fertilidade e teor de matéria orgânica, tende a ter uma estrutura mais estável e coesa, o que pode conferir certa resistência à erosão. No entanto, em condições de uso inadequado, como agricultura intensiva ou desmatamento, o solo preto pode ficar vulnerável à erosão.
+        """)
+    with st.expander("Distribuição geográfica"):
+        st.write("""
+            O solo preto é comumente encontrado em regiões de clima tropical, especialmente em áreas com vegetação de savana ou floresta tropical úmida. Alguns exemplos de regiões onde o solo preto é predominante incluem o Cerrado brasileiro, partes da África subsaariana, Índia e Austrália. No Brasil, o solo preto é especialmente associado à região do Planalto Central.
+        """)
+   
 
 
