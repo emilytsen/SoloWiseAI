@@ -70,30 +70,48 @@ if st.button("Analisar Imagem"):
                 st.write("Como o nome sugere, o solo vermelho tem uma coloração avermelhada devido à presença de óxidos de ferro, especialmente o óxido de ferro (III) ou ferrugem.")
             with st.expander("Textura"):
                 st.write("A textura do solo vermelho pode variar, mas muitas vezes é composta por partículas finas e bem desagregadas. Essa textura pode afetar a capacidade de retenção de água e nutrientes do solo.")
-            with st.expander("Composição mineral"):
+            with st.expander("Composição Mineral"):
                 st.write("O solo vermelho geralmente contém minerais de argila, areia e silte. A proporção desses minerais pode variar dependendo da região geográfica.")
             with st.expander("Fertilidade"):
                 st.write("O solo vermelho pode ser naturalmente fértil devido à presença de minerais de ferro e outros nutrientes. No entanto, a fertilidade do solo pode variar dependendo de fatores como a quantidade de matéria orgânica e a disponibilidade de água.")
             with st.expander("Oxidação"):
                 st.write("O solo vermelho é frequentemente associado à oxidação do ferro, que ocorre quando minerais de ferro são expostos ao oxigênio e à água. Isso pode resultar na formação de manchas ou veios vermelhos no solo.")
-            with st.expander("Resistência à erosão"):
+            with st.expander("Resistência à Erosão"):
                 st.write("Devido à sua textura fina e agregação, o solo vermelho pode ser mais suscetível à erosão, especialmente em áreas com chuvas intensas ou ventos fortes.")
-            with st.expander("Distribuição geográfica"):
+            with st.expander("Distribuição Geográfica"):
                 st.write("O solo vermelho pode ser encontrado em várias partes do mundo, incluindo regiões tropicais e subtropicais. Sua distribuição geográfica pode ser influenciada por fatores climáticos, geológicos e pedogenéticos.")
-        
+            with st.expander("Plantio Apropriado"):
+                st.write("""
+                    - **Café**: O solo vermelho é altamente valorizado para o cultivo de café devido à sua boa drenagem e capacidade de reter nutrientes.
+                    - **Frutas**: Frutíferas como laranja, uva e abacate se desenvolvem muito bem nesse tipo de solo, especialmente em climas tropicais.
+                    - **Soja**: A soja é outra cultura que se beneficia das características do solo vermelho, sendo comum em regiões agrícolas produtivas.
+                    - **Milho**: Ideal para o cultivo de milho, que exige um solo bem drenado e com boa capacidade de retenção de água.
+                    - **Algodão**: Como no solo preto, o solo vermelho oferece boas condições para o cultivo de algodão, uma vez que mantém um nível adequado de umidade.
+                    - **Hortaliças**: Algumas hortaliças, como tomate e pimentão, também prosperam em solos vermelhos bem drenados e ricos em nutrientes.
+                """)
+
+
         if predicted_class == "Preto":
             st.title("Características do Solo Preto")
             with st.expander("Cor"):
                 st.write("O solo preto tem uma cor escura devido ao alto teor de matéria orgânica em decomposição. Essa matéria orgânica ajuda a reter umidade e nutrientes, tornando-o especialmente fértil.")
             with st.expander("Textura"):
                 st.write("Em muitas regiões onde o solo orgânico preto é encontrado em abundância, ele tende a ter uma textura argilosa ou silto-argilosa. Isso ocorre porque a decomposição de matéria orgânica ao longo do tempo pode adicionar uma quantidade significativa de partículas finas ao solo, resultando em uma textura mais argilosa.")
-            with st.expander("Composição mineral"):
+            with st.expander("Composição Mineral"):
                 st.write("O solo preto é composto principalmente por minerais argilosos, como a montmorilonita e a caulinita, que são responsáveis pela sua textura densa e alta capacidade de retenção de água e nutrientes.")
             with st.expander("Fertilidade"):
                 st.write("Devido ao alto teor de matéria orgânica, o solo preto é altamente fértil e adequado para o cultivo de uma variedade de plantas. Ele fornece nutrientes essenciais às plantas e ajuda a melhorar a estrutura do solo.")
             with st.expander("Oxidação"):
                 st.write("A oxidação é um processo que pode afetar a cor e a estrutura do solo. No caso do solo preto, a matéria orgânica presente nele pode passar por processos de oxidação ao longo do tempo, resultando em mudanças na sua cor e na disponibilidade de nutrientes.")
-            with st.expander("Resistência à erosão"):
+            with st.expander("Resistência à Erosão"):
                 st.write("O solo preto, devido à sua alta fertilidade e teor de matéria orgânica, tende a ter uma estrutura mais estável e coesa, o que pode conferir certa resistência à erosão. No entanto, em condições de uso inadequado, como agricultura intensiva ou desmatamento, o solo preto pode ficar vulnerável à erosão.")
-            with st.expander("Distribuição geográfica"):
+            with st.expander("Distribuição Geográfica"):
                 st.write("O solo preto é comumente encontrado em regiões de clima tropical, especialmente em áreas com vegetação de savana ou floresta tropical úmida. Alguns exemplos de regiões onde o solo preto é predominante incluem o Cerrado brasileiro, partes da África subsaariana, Índia e Austrália. No Brasil, o solo preto é especialmente associado à região do Planalto Central.")
+            with st.expander("Plantio Apropriado"):
+                st.write("""
+                    - **Grãos**: Culturas como milho, soja e trigo se desenvolvem muito bem nesse tipo de solo, garantindo altos rendimentos.
+                    - **Cana-de-açúcar**: Ideal para o cultivo de cana, sendo amplamente utilizado em regiões como São Paulo.
+                    - **Algodão**: O solo preto oferece os nutrientes necessários para o desenvolvimento do algodão.
+                    - **Café**: Comumente utilizado no cultivo de café, especialmente em regiões como Minas Gerais.
+                    - **Hortaliças e Legumes**: Batata, cenoura e outros vegetais que precisam de solos bem drenados e ricos em nutrientes.
+                """)
